@@ -1,0 +1,22 @@
+MediathequeSecurityBundle:
+    resource: "@MediathequeSecurityBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+userBundle:
+    resource: "@userBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+mediaBundle:
+    resource: "@mediaBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+login_check:
+    pattern:   /media/login_check
+
+# Internal routing configuration to handle ESI
+#_internal:
+#   resource: "@FrameworkBundle/Resources/config/routing/internal.xml"
+#   prefix:   /_internal
